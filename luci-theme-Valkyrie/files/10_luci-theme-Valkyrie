@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.Valkyrie=/luci-static/Valkyrie
+	set luci.main.mediaurlbase=/luci-static/Valkyrie
+	commit luci
+EOF
+exit 0
